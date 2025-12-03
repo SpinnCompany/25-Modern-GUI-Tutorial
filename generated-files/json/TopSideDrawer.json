@@ -1,0 +1,50 @@
+{
+  "QPushButton": [
+    {
+      "name": "wifiBtn",
+      "icon": "../Qss/icons/icons/material_design/wifi.png"
+    },
+    {
+      "name": "bluetoothBtn",
+      "icon": "../Qss/icons/icons/material_design/bluetooth.png"
+    },
+    {
+      "name": "flashlightBtn",
+      "icon": "../Qss/icons/icons/material_design/flashlight_on.png"
+    },
+    {
+      "name": "moonBtn",
+      "icon": "../Qss/icons/icons/material_design/bedtime.png"
+    },
+    {
+      "name": "brightnessBtn",
+      "icon": "../Qss/icons/icons/material_design/brightness_medium.png"
+    },
+    {
+      "name": "clearAllBtn",
+      "icon": "../Qss/icons/icons/material_design/clear_all.png"
+    }
+  ],
+  "QListWidget": [
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/chat_bubble.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/cloud_done.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/system_update.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/event.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/battery_charging_full.png"
+    }
+  ]
+}

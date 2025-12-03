@@ -1,0 +1,48 @@
+{
+  "QPushButton": [
+    {
+      "name": "hideHamburgerBtn",
+      "icon": "../Qss/icons/icons/material_design/close.png"
+    },
+    {
+      "name": "profileBtn",
+      "icon": "../Qss/icons/icons/material_design/account_circle.png"
+    },
+    {
+      "name": "dashboardBtn",
+      "icon": "../Qss/icons/icons/material_design/dashboard.png"
+    },
+    {
+      "name": "messagesBtn",
+      "icon": "../Qss/icons/icons/material_design/chat_bubble.png"
+    },
+    {
+      "name": "filesBtn",
+      "icon": "../Qss/icons/icons/material_design/folder.png"
+    },
+    {
+      "name": "calendarBtn",
+      "icon": "../Qss/icons/icons/material_design/event.png"
+    },
+    {
+      "name": "analyticsBtn",
+      "icon": "../Qss/icons/icons/material_design/analytics.png"
+    },
+    {
+      "name": "settingsBtn",
+      "icon": "../Qss/icons/icons/material_design/settings.png"
+    },
+    {
+      "name": "notificationsBtn",
+      "icon": "../Qss/icons/icons/material_design/notifications.png"
+    },
+    {
+      "name": "helpBtn",
+      "icon": "../Qss/icons/icons/material_design/help.png"
+    },
+    {
+      "name": "themeBtn",
+      "icon": "../Qss/icons/icons/material_design/light_mode.png"
+    }
+  ]
+}

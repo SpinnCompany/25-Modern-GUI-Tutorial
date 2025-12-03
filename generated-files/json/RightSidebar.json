@@ -1,0 +1,46 @@
+{
+  "QCustomSidebarButton": [
+    {
+      "name": "btnRightMenu",
+      "icon": "../Qss/icons/icons/material_design/apps.png"
+    },
+    {
+      "name": "btnQuickNote",
+      "icon": "../Qss/icons/icons/material_design/note_add.png"
+    },
+    {
+      "name": "btnScreenshot",
+      "icon": "../Qss/icons/icons/material_design/screenshot.png"
+    },
+    {
+      "name": "btnCalculator",
+      "icon": "../Qss/icons/icons/material_design/calculate.png"
+    },
+    {
+      "name": "btnTimer",
+      "icon": "../Qss/icons/icons/material_design/timer.png"
+    },
+    {
+      "name": "btnSystemMonitor",
+      "icon": "../Qss/icons/icons/material_design/monitor_heart.png"
+    },
+    {
+      "name": "btnCalendar",
+      "icon": "../Qss/icons/icons/material_design/calendar_month.png"
+    }
+  ],
+  "QListWidget": [
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/description.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/design_services.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/table_chart.png"
+    }
+  ]
+}

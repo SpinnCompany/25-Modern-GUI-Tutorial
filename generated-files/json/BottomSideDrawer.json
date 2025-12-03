@@ -1,0 +1,34 @@
+{
+  "QPushButton": [
+    {
+      "name": "shuffleBtn",
+      "icon": "../Qss/icons/icons/material_design/shuffle.png"
+    },
+    {
+      "name": "prevBtn",
+      "icon": "../Qss/icons/icons/material_design/skip_previous.png"
+    },
+    {
+      "name": "playBtn",
+      "icon": "../Qss/icons/icons/material_design/play_circle.png"
+    },
+    {
+      "name": "nextBtn",
+      "icon": "../Qss/icons/icons/material_design/skip_next.png"
+    },
+    {
+      "name": "repeatBtn",
+      "icon": "../Qss/icons/icons/material_design/repeat.png"
+    },
+    {
+      "name": "expandBtn",
+      "icon": "../Qss/icons/icons/material_design/fullscreen.png"
+    }
+  ],
+  "QLabel": [
+    {
+      "name": "volumeIconLabel",
+      "icon": "../Qss/icons/icons/material_design/volume_up.png"
+    }
+  ]
+}

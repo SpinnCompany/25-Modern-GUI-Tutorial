@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>CustomComponent</class>
+ <widget class="QCustomComponent" name="CustomComponent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>0</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CustomComponent</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Spinn Progress Dashboard</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="leftSideDrawerBtn">
+           <property name="text">
+            <string>Left Drawer</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/feather/icons/feather/align-justify.png</normaloff>:/feather/icons/feather/align-justify.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="topSideDrawerBtn">
+           <property name="text">
+            <string>Top Drawer</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-up.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-up.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bottomSideDrawerBtn">
+           <property name="text">
+            <string>Bottom Drawer</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-down.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-down.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rightSideDrawerBtn">
+           <property name="text">
+            <string>Right Drawer</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-right.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/chevron-right.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCustomHorizontalSeparator" name="customHorizontalSeparator" />
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea_3">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-8</y>
+        <width>915</width>
+        <height>528</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>CIRCULAR PROGRESS BARS</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>857</width>
+               <height>142</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_9" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QCustomRoundProgressBar" name="customRoundProgressBar">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="value" stdset="0">
+                    <number>65</number>
+                   </property>
+                   <property name="progressBarWidth" stdset="0">
+                    <number>10</number>
+                   </property>
+                   <property name="progressColor" stdset="0">
+                    <color>
+                     <red>78</red>
+                     <green>205</green>
+                     <blue>196</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>Memory Usage</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_8" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QCustomRoundProgressBar" name="customRoundProgressBar_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="value" stdset="0">
+                    <number>23</number>
+                   </property>
+                   <property name="progressBarWidth" stdset="0">
+                    <number>10</number>
+                   </property>
+                   <property name="progressColor" stdset="0">
+                    <color>
+                     <red>69</red>
+                     <green>183</green>
+                     <blue>209</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>Disk Usage</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_7" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QCustomRoundProgressBar" name="customRoundProgressBar_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="value" stdset="0">
+                    <number>42</number>
+                   </property>
+                   <property name="progressBarWidth" stdset="0">
+                    <number>10</number>
+                   </property>
+                   <property name="progressColor" stdset="0">
+                    <color>
+                     <red>255</red>
+                     <green>107</green>
+                     <blue>107</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>CPU Usage</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_6" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QCustomRoundProgressBar" name="customRoundProgressBar_4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="value" stdset="0">
+                    <number>78</number>
+                   </property>
+                   <property name="progressBarWidth" stdset="0">
+                    <number>10</number>
+                   </property>
+                   <property name="progressColor" stdset="0">
+                    <color>
+                     <red>150</red>
+                     <green>206</green>
+                     <blue>180</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>Network</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>LINEAR PROGRESS BARS</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>997</width>
+               <height>56</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_10" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>Loading</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCustomQProgressBar" name="customProgressBar">
+                   <property name="paused" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="customBarColor" stdset="0">
+                    <color>
+                     <red>255</red>
+                     <green>107</green>
+                     <blue>107</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>Active</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_11" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>Processing</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCustomQProgressBar" name="customProgressBar_2">
+                   <property name="customBarColor" stdset="0">
+                    <color>
+                     <red>150</red>
+                     <green>206</green>
+                     <blue>180</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>78%</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_12" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>Data Sync</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCustomQProgressBar" name="customProgressBar_3">
+                   <property name="customBarColor" stdset="0">
+                    <color>
+                     <red>69</red>
+                     <green>183</green>
+                     <blue>209</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>42%</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+               <widget class="QWidget" name="widget_13" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>File Upload</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCustomQProgressBar" name="customProgressBar_4">
+                   <property name="customBarColor" stdset="0">
+                    <color>
+                     <red>78</red>
+                     <green>205</green>
+                     <blue>196</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>65%</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCustomQRGenerator" name="customQRGenerator">
+         <property name="data" stdset="0">
+          <string>https://spinncode.com</string>
+         </property>
+         <property name="moduleDrawer" stdset="0">
+          <string>square</string>
+         </property>
+         <property name="colorMask" stdset="0">
+          <string>solid</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QCustomSidebarLabel" name="customSidebarLabel">
+            <property name="text" stdset="0">
+             <string>PROGRESS MONITOR CONSOLE</string>
+            </property>
+            <property name="icon" stdset="0">
+             <iconset resource="../Qss/icons/_icons.qrc">
+              <normaloff>:/feather/icons/feather/terminal.png</normaloff>:/feather/icons/feather/terminal.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="consoleOutput">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomHorizontalSeparator</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomHorizontalSeparator</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomSidebarLabel</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomSidebarLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomRoundProgressBar</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomProgressBars</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomComponent</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomComponent</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomQProgressBar</class>
+   <extends>QProgressBar</extends>
+   <header>Custom_Widgets.QCustomLoadingIndicators</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomQRGenerator</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomQRGenerator</header>
+  </customwidget>
+ <customwidget><class>QPushButton</class><extends>QPushButton</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget><customwidget><class>QLabel</class><extends>QLabel</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget></customwidgets>
+ <connections />
+</ui>

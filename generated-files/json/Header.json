@@ -1,0 +1,16 @@
+{
+  "QPushButton": [
+    {
+      "name": "pushButton",
+      "icon": "../Qss/icons/icons/material_design/search.png"
+    },
+    {
+      "name": "pushButton_2",
+      "icon": "../Qss/icons/icons/material_design/notifications.png"
+    },
+    {
+      "name": "pushButton_3",
+      "icon": "../Qss/icons/icons/material_design/settings.png"
+    }
+  ]
+}

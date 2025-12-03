@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomComponent</class>
+ <widget class="QCustomComponent" name="CustomComponent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>0</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CustomComponent</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCustomHamburgerMenu" name="bottomHamburgerMenu">
+     <property name="position" stdset="0">
+      <string>Bottom</string>
+     </property>
+     <property name="sizeWrap" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="center" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="toggleButtonName" stdset="0">
+      <string>bottomSideDrawerBtn</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QWidget" name="bottomDrawerWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="nowPlayingLabel">
+           <property name="text">
+            <string>NOW PLAYING</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="songTitleLabel">
+           <property name="text">
+            <string>Blinding Lights</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="artistLabel">
+           <property name="text">
+            <string>The Weeknd</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="progressSlider">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="controlsLayout">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="shuffleBtn">
+             <property name="text">
+              <string>Shuffle</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/shuffle.png</normaloff>:/material_design/icons/material_design/shuffle.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="prevBtn">
+             <property name="text">
+              <string>Prev</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/skip_previous.png</normaloff>:/material_design/icons/material_design/skip_previous.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="playBtn">
+             <property name="text">
+              <string>Play</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/play_circle.png</normaloff>:/material_design/icons/material_design/play_circle.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="nextBtn">
+             <property name="text">
+              <string>Next</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/skip_next.png</normaloff>:/material_design/icons/material_design/skip_next.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="repeatBtn">
+             <property name="text">
+              <string>Repeat</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/repeat.png</normaloff>:/material_design/icons/material_design/repeat.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="volumeLayout">
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="volumeIconLabel">
+             <property name="text">
+              <string>Volume</string>
+             </property>
+             <property name="icon" stdset="0">
+              <iconset resource="../Qss/icons/_icons.qrc">
+               <normaloff>:/material_design/icons/material_design/volume_up.png</normaloff>:/material_design/icons/material_design/volume_up.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="volumeSlider">
+             <property name="value">
+              <number>70</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="expandBtn">
+           <property name="text">
+            <string>Expand Player</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/material_design/icons/material_design/fullscreen.png</normaloff>:/material_design/icons/material_design/fullscreen.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomHamburgerMenu</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomHamburgerMenu</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomComponent</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomComponent</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Qss/icons/_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

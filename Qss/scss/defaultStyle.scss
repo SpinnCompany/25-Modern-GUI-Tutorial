@@ -1,0 +1,899 @@
+//===================================================//
+// FILE AUTO-GENERATED. PUT YOUR DEFAULT STYLES HERE. 
+// THESE STYLES WILL OVERRIDE THE THEME STYLES
+//====================================================//
+
+// ===================================================
+// GLOBAL STYLES & VARIABLES
+// ===================================================
+
+* {
+    font-family: "Geist Mono";
+    // font-family: "Geist Mono", "JetBrains Mono", "Fira Code", monospace;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+// ===================================================
+// LAYOUT COMPONENTS
+// ===================================================
+
+QMainWindow, #centralwidget {
+    background-color: $COLOR_BACKGROUND_1;
+    padding: $SPACING_MD;
+}
+
+// Main Content Area
+#mainBody {
+    background-color: transparent;
+    border-radius: $CARD_RADIUS;
+    border: none;
+}
+
+// ===================================================
+// SIDEBAR & NAVIGATION
+// ===================================================
+
+// Base Sidebar Styles
+QCustomSidebar, QCustomHamburgerMenu {
+    background-color: $COLOR_BACKGROUND_3;
+    border-radius: $CARD_RADIUS;
+    border: $BORDER_2;
+    
+    & > QWidget {
+        background-color: transparent;
+    }
+}
+
+// Sidebar Buttons
+QCustomSidebar, QCustomHamburgerMenu {
+    & > QCustomSidebarButton,
+    & > QPushButton {
+        background-color: transparent;
+        color: $COLOR_TEXT_2;
+        padding: $SPACING_SM $SPACING_MD;
+        margin: 2px $SPACING_SM;
+        text-align: left;
+        border: none;
+        border-radius: $SIZE_BORDER_RADIUS;
+        
+        &:hover {
+            background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.1);
+            color: $COLOR_TEXT_1;
+        }
+        
+        &:checked, &:pressed {
+            background-color: $COLOR_ACCENT_1;
+            color: $COLOR_BACKGROUND_1;
+            font-weight: bold;
+        }
+    }
+
+    // Collapsed State
+    &[state="collapsed"] {
+        &  QCustomSidebarButton,
+        &  QPushButton {
+            text-align: center;
+            border-radius: 8px;
+            padding: $SPACING_SM;
+            
+            &::icon {
+                margin-right: 0;
+            }
+        }
+    }
+
+    // Expanded State
+    &[state="expanded"] {
+        &  QCustomSidebarButton,
+        &  QPushButton {
+            text-align: left;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+
+// ===================================================
+// LEFT DRAWER - MAIN NAVIGATION
+// ===================================================
+
+#leftHamburgerMenu {
+    background-color: $COLOR_BACKGROUND_1;
+    border-right: $BORDER_2;
+    border-radius: 0;
+    border-top-right-radius: $CARD_RADIUS;
+    border-bottom-right-radius: $CARD_RADIUS;
+
+    #headerWidget {
+        background-color: transparent;
+    }
+
+    #appTitleLabel {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #hideHamburgerBtn {
+        background-color: transparent;
+        border: none;
+    }
+
+    #profileBtn {
+        background-color: $COLOR_BACKGROUND_4;
+        border: none;
+        border-radius: 20px;
+        padding: 0;
+        margin: 0;
+        min-height: 40px;
+        min-width: 40px;
+        
+        &:hover {
+            background-color: $COLOR_ACCENT_2;
+        }
+    }
+
+    #userInfoLabel {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    // Navigation Buttons
+    #dashboardBtn,
+    #messagesBtn,
+    #filesBtn,
+    #calendarBtn,
+    #analyticsBtn,
+    #settingsBtn,
+    #notificationsBtn,
+    #helpBtn {
+        background-color: transparent;
+        color: $COLOR_TEXT_2;
+        border: none;
+        border-radius: $SIZE_BORDER_RADIUS;
+        padding: $SPACING_SM $SPACING_MD;
+        margin: 2px $SPACING_SM;
+        text-align: left;
+        font-size: 13px;
+        
+        &:hover {
+            background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.1);
+            color: $COLOR_TEXT_1;
+        }
+        
+        &:checked, &:pressed {
+            background-color: $COLOR_ACCENT_1;
+            color: $COLOR_BACKGROUND_1;
+            font-weight: bold;
+        }
+    }
+
+    // Tools Section
+    #toolsLabel {
+        color: $COLOR_TEXT_3;
+        font-weight: bold;
+        font-size: 11px;
+        padding: $SPACING_SM $SPACING_MD;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: $SPACING_MD;
+        opacity: 0.8;
+    }
+
+    #footerWidget{
+        background-color: transparent
+    }
+    #themeBtn {
+        background-color: $COLOR_BACKGROUND_3;
+        color: $COLOR_TEXT_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        
+        &:hover {
+            background-color: $COLOR_BACKGROUND_4;
+            color: $COLOR_TEXT_1;
+            border: $BORDER_SELECTION_2;
+        }
+        
+        &:pressed {
+            background-color: $COLOR_ACCENT_1;
+            color: $COLOR_BACKGROUND_1;
+            border: $BORDER_SELECTION_1;
+        }
+    }
+
+    #copyrightLabel {
+        color: $COLOR_TEXT_4;
+        font-size: 11px;
+        padding: 4px 0;
+        opacity: 0.7;
+    }
+}
+
+// ===================================================
+// RIGHT DRAWER - DETAILS PANEL
+// ===================================================
+
+#rightHamburgerMenu {
+    background-color: $COLOR_BACKGROUND_1;
+    border-left: $BORDER_2;
+    border-radius: 0;
+    border-top-left-radius: $CARD_RADIUS;
+    border-bottom-left-radius: $CARD_RADIUS;
+
+    #detailsHeaderLabel {
+        font-weight: bold;
+        font-size: 14px;
+        padding: $SPACING_MD;
+        border-radius: $CARD_RADIUS $CARD_RADIUS 0 0;
+        margin-bottom: $SPACING_SM;
+        letter-spacing: 0.5px;
+    }
+
+    #selectedItemLabel {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_2;
+        font-weight: bold;
+        padding: $SPACING_SM $SPACING_MD;
+        border-radius: $SIZE_BORDER_RADIUS;
+        margin: 0 $SPACING_SM $SPACING_MD $SPACING_SM;
+        border: $BORDER_2;
+        font-size: 13px;
+    }
+
+    // File Information
+    #typeLabel,
+    #sizeLabel,
+    #modifiedLabel {
+        color: $COLOR_TEXT_3;
+        font-weight: bold;
+        padding: 4px $SPACING_SM;
+        font-size: 12px;
+    }
+
+    #typeValue,
+    #sizeValue,
+    #modifiedValue {
+        color: $COLOR_TEXT_2;
+        padding: 4px $SPACING_SM;
+        font-size: 12px;
+    }
+
+    #actionsLabel {
+        color: $COLOR_TEXT_2;
+        font-weight: bold;
+        font-size: 13px;
+        padding: $SPACING_MD $SPACING_SM $SPACING_SM $SPACING_SM;
+        border-top: $BORDER_2;
+        margin-top: $SPACING_SM;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    // Action Buttons
+    #shareBtn,
+    #tagBtn,
+    #infoBtn,
+    #downloadBtn,
+    #deleteBtn {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        padding: $SPACING_SM $SPACING_MD;
+        margin: 2px $SPACING_SM;
+        text-align: left;
+        font-size: 12px;
+        
+        &:hover {
+            background-color: $COLOR_BACKGROUND_3;
+            color: $COLOR_TEXT_1;
+            border: $BORDER_SELECTION_2;
+        }
+    }
+
+    // Semantic button colors
+    #shareBtn {
+        background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.1);
+        border: 1px solid rgba($CA1_R, $CA1_G, $CA1_B, 0.3);
+        
+        &:hover {
+            background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.2);
+        }
+    }
+
+    #downloadBtn {
+        background-color: rgba(76, 175, 80, 0.1);
+        border: 1px solid rgba(76, 175, 80, 0.3);
+        
+        &:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+    }
+
+    #deleteBtn {
+        background-color: rgba(244, 67, 54, 0.1);
+        border: 1px solid rgba(244, 67, 54, 0.3);
+        
+        &:hover {
+            background-color: rgba(244, 67, 54, 0.2);
+        }
+    }
+}
+
+// ===================================================
+// BOTTOM DRAWER - MUSIC PLAYER
+// ===================================================
+
+#bottomHamburgerMenu {
+    background-color: $COLOR_BACKGROUND_1;
+    border-top: $BORDER_2;
+    border-radius: 0 0 $CARD_RADIUS $CARD_RADIUS;
+    padding: $SPACING_MD;
+
+    #nowPlayingLabel {
+        background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                                   stop: 0 $COLOR_ACCENT_1, 
+                                   stop: 1 $COLOR_ACCENT_2);
+        color: $COLOR_BACKGROUND_1;
+        font-weight: bold;
+        font-size: 13px;
+        padding: $SPACING_SM $SPACING_MD;
+        border-radius: $SIZE_BORDER_RADIUS;
+        text-align: center;
+        margin-bottom: $SPACING_SM;
+        letter-spacing: 0.5px;
+    }
+
+    #songTitleLabel {
+        color: $COLOR_TEXT_1;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        padding: 2px 0;
+    }
+
+    #artistLabel {
+        color: $COLOR_TEXT_3;
+        font-size: 13px;
+        text-align: center;
+        padding: 2px 0;
+        margin-bottom: $SPACING_MD;
+    }
+
+    // Music Progress Slider
+    #progressSlider {
+        background-color: $COLOR_BACKGROUND_3;
+        border-radius: 3px;
+        margin: $SPACING_SM 0;
+
+        &::groove:horizontal {
+            background-color: $COLOR_BACKGROUND_4;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        &::handle:horizontal {
+            background-color: $COLOR_ACCENT_1;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin: -4px 0;
+        }
+    }
+
+    // Music Control Buttons
+    #shuffleBtn,
+    #prevBtn,
+    #playBtn,
+    #nextBtn,
+    #repeatBtn {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        padding: $SPACING_SM;
+        margin: 0 2px;
+        min-width: 60px;
+        
+        &:hover {
+            background-color: $COLOR_BACKGROUND_3;
+            color: $COLOR_TEXT_1;
+            border: $BORDER_SELECTION_2;
+        }
+    }
+
+    #playBtn {
+        background-color: $COLOR_ACCENT_1;
+        color: $COLOR_BACKGROUND_1;
+        border: $BORDER_SELECTION_1;
+        font-weight: bold;
+        
+        &:hover {
+            background-color: $COLOR_ACCENT_2;
+            border: $BORDER_SELECTION_2;
+        }
+        
+        &:pressed {
+            background-color: $COLOR_ACCENT_3;
+        }
+    }
+
+    // Volume Slider
+    #volumeSlider {
+        background-color: $COLOR_BACKGROUND_3;
+        border-radius: 3px;
+
+        &::groove:horizontal {
+            background-color: $COLOR_BACKGROUND_4;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        &::handle:horizontal {
+            background-color: $COLOR_ACCENT_1;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin: -4px 0;
+        }
+    }
+}
+
+// ===================================================
+// TOP DRAWER - NOTIFICATIONS & QUICK ACTIONS
+// ===================================================
+
+#topHamburgerMenu {
+    background-color: $COLOR_BACKGROUND_1;
+    border-bottom: $BORDER_2;
+    border-radius: $CARD_RADIUS;
+    padding: $SPACING_MD;
+
+    #notificationsHeaderLabel {
+        background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, 
+                                   stop: 0 $COLOR_ACCENT_1, 
+                                   stop: 1 $COLOR_ACCENT_2);
+        color: $COLOR_BACKGROUND_1;
+        font-weight: bold;
+        font-size: 14px;
+        padding: $SPACING_SM $SPACING_MD;
+        border-radius: $SIZE_BORDER_RADIUS;
+        text-align: center;
+        margin-bottom: $SPACING_MD;
+        letter-spacing: 0.5px;
+    }
+
+    // Quick Action Buttons
+    #wifiBtn,
+    #bluetoothBtn,
+    #flashlightBtn,
+    #moonBtn,
+    #brightnessBtn {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        padding: $SPACING_SM;
+        margin: 0 2px;
+        min-width: 70px;
+        
+        &:hover {
+            background-color: $COLOR_BACKGROUND_3;
+            color: $COLOR_TEXT_1;
+            border: $BORDER_SELECTION_2;
+        }
+        
+        &:pressed, &:checked {
+            background-color: $COLOR_ACCENT_1;
+            color: $COLOR_BACKGROUND_1;
+            border: $BORDER_SELECTION_1;
+        }
+    }
+
+    #notificationsSectionLabel {
+        color: $COLOR_TEXT_2;
+        font-weight: bold;
+        font-size: 13px;
+        padding: $SPACING_MD $SPACING_SM $SPACING_SM $SPACING_SM;
+        border-top: $BORDER_2;
+        margin-top: $SPACING_SM;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    // Notification List
+    #notificationList {
+        background-color: $COLOR_BACKGROUND_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        outline: none;
+        margin: $SPACING_SM 0;
+
+        &::item {
+            background-color: transparent;
+            color: $COLOR_TEXT_2;
+            border-bottom: 1px solid $COLOR_BACKGROUND_4;
+            padding: $SPACING_SM $SPACING_MD;
+            
+            &:hover {
+                background-color: $COLOR_BACKGROUND_3;
+                color: $COLOR_TEXT_1;
+            }
+            
+            &:selected {
+                background-color: $COLOR_ACCENT_1;
+                color: $COLOR_BACKGROUND_1;
+            }
+            
+            &:last {
+                border-bottom: none;
+            }
+            
+            &::icon {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    #clearAllBtn {
+        background-color: $COLOR_BACKGROUND_2;
+        color: $COLOR_TEXT_2;
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+        padding: $SPACING_SM $SPACING_MD;
+        margin-top: $SPACING_SM;
+        
+        &:hover {
+            background-color: $COLOR_BACKGROUND_3;
+            color: $COLOR_TEXT_1;
+            border: $BORDER_SELECTION_2;
+        }
+        
+        &:pressed {
+            background-color: rgba(244, 67, 54, 0.8);
+            color: $COLOR_BACKGROUND_1;
+            border: 1px solid rgba(244, 67, 54, 0.5);
+        }
+    }
+}
+
+// ===================================================
+// FOOTER & UTILITY COMPONENTS
+// ===================================================
+
+// Footer Component
+#FooterComponent, #HeaderComponent {
+    background-color: $COLOR_BACKGROUND_2;
+    border: $BORDER_2;
+    
+    & > QWidget {
+        background-color: transparent;
+        border: none;
+        
+        & > QPushButton, 
+        & > QLabel {
+            background: transparent;
+            border: none;
+        }
+    }
+}
+
+#FooterComponent {
+    border-top-left-radius: $CARD_RADIUS;
+    border-top-right-radius: $CARD_RADIUS;
+    border-bottom: none;
+}
+
+#HeaderComponent {
+    border-bottom-left-radius: $CARD_RADIUS;
+    border-bottom-right-radius: $CARD_RADIUS;
+    border-top: none;
+}
+
+// ===================================================
+// FORM ELEMENTS & INPUTS
+// ===================================================
+
+QPlainTextEdit {
+    background-color: $COLOR_BACKGROUND_2;
+    border: $BORDER_2;
+    border-radius: $CARD_RADIUS;
+    color: $COLOR_TEXT_2;
+    padding: $SPACING_SM;
+    selection-background-color: $COLOR_ACCENT_1;
+    selection-color: $COLOR_BACKGROUND_1;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 11px;
+
+    &:focus {
+        border: $BORDER_SELECTION_1;
+        background-color: $COLOR_BACKGROUND_3;
+    }
+}
+
+// ===================================================
+// SCROLLBARS & SEPARATORS
+// ===================================================
+
+// Separators
+QCustomHorizontalSeparator {
+    color: $COLOR_TEXT_4; //use font color, no background now
+    // no other customizations
+}
+
+// ===================================================
+// FOCUS STATES & ACCESSIBILITY
+// ===================================================
+
+QPushButton:focus, QCustomSidebarButton:focus {
+    border: $BORDER_SELECTION_1;
+}
+
+// Disabled state
+QPushButton:disabled, QCustomSidebarButton:disabled {
+    opacity: 0.5;
+}
+
+// ===================================================
+// RIGHT SIDEBAR COMPONENT
+// ===================================================
+#leftSidebarComponentContainer{
+    &> * {
+        border-top-right-radius: $CARD_RADIUS;
+        border-bottom-right-radius: $CARD_RADIUS;
+    }
+} 
+
+#rightSidebarComponentContainer {
+    &>*{
+        border-top-left-radius: $CARD_RADIUS;
+        border-bottom-left-radius: $CARD_RADIUS;
+    }
+}
+#leftSidebarComponentContainer, #rightSidebarComponentContainer {
+    &>*{
+        background-color: $COLOR_BACKGROUND_2;
+    }
+    
+    #rightSidebar, #leftSidebar {
+        background-color: $COLOR_BACKGROUND_3;        
+        & QWidget {
+            background-color: transparent;
+        }
+
+        QPushButton, QCustomSidebarButton{
+            background-color: transparent;
+            color: $COLOR_TEXT_2;
+            border: none;
+            border-radius: $SIZE_BORDER_RADIUS;
+            padding: $SPACING_SM $SPACING_MD;
+            margin: 2px $SPACING_SM;
+            text-align: left;
+            font-size: 13px;
+            
+            &:hover {
+                background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.1);
+                color: $COLOR_TEXT_1;
+            }
+            
+            &:checked, &:pressed {
+                background-color: $COLOR_ACCENT_1;
+                color: $COLOR_BACKGROUND_1;
+                font-weight: bold;
+            }
+        }
+
+        // Collapsed State
+        &[state="collapsed"] {
+            QPushButton,QCustomSidebarButton {
+                text-align: center;
+                border-radius: 8px;
+                padding: $SPACING_SM;
+            }
+        }
+
+        // Expanded State
+        &[state="expanded"] {
+            QPushButton, QCustomSidebarButton {
+                text-align: left;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    #rightSidebar {
+        // Right Sidebar Header
+        #rightHeaderWidget {
+            background-color: transparent;
+        }
+
+        #btnRightMenu {
+            background-color: transparent;
+            color: $COLOR_TEXT_1;
+            border: none;
+            border-radius: $SIZE_BORDER_RADIUS;
+            padding: $SPACING_SM $SPACING_MD;
+            font-weight: bold;
+            font-size: 13px;
+            
+            &:hover {
+                background-color: rgba($CA1_R, $CA1_G, $CA1_B, 0.1);
+            }
+            
+            &:pressed {
+                background-color: $COLOR_ACCENT_1;
+                color: $COLOR_BACKGROUND_1;
+            }
+        }
+
+        #searchBox {
+            background-color: $COLOR_BACKGROUND_1;
+            border: $BORDER_2;
+            border-radius: $SIZE_BORDER_RADIUS;
+            padding: $SPACING_SM $SPACING_MD;
+            color: $COLOR_TEXT_2;
+            font-size: 12px;
+            
+            &:focus {
+                border: $BORDER_SELECTION_1;
+                background-color: $COLOR_BACKGROUND_2;
+                color: $COLOR_TEXT_1;
+            }
+            
+            &::placeholder {
+                color: $COLOR_TEXT_4;
+            }
+        }
+
+        // Section Labels
+        #quickActionsLabel,
+        #recentFilesLabel,
+        #systemLabel {
+            color: $COLOR_TEXT_3;
+            font-weight: bold;
+            font-size: 11px;
+            padding: $SPACING_SM $SPACING_MD;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        // Recent Files List
+        #recentFilesList {
+            background-color: $COLOR_BACKGROUND_2;
+            border: $BORDER_2;
+            border-radius: $SIZE_BORDER_RADIUS;
+            outline: none;
+            margin: 0 $SPACING_SM;
+
+            &::item {
+                background-color: transparent;
+                color: $COLOR_TEXT_2;
+                border-bottom: 1px solid $COLOR_BACKGROUND_4;
+                padding: $SPACING_SM $SPACING_MD;
+                font-size: 12px;
+                
+                &:hover {
+                    background-color: $COLOR_BACKGROUND_3;
+                    color: $COLOR_TEXT_1;
+                }
+                
+                &:selected {
+                    background-color: $COLOR_ACCENT_1;
+                    color: $COLOR_BACKGROUND_1;
+                }
+                
+                &:last {
+                    border-bottom: none;
+                }
+                
+                &::icon {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        // System Stats Section
+        #systemStatsWidget {
+            background-color: $COLOR_BACKGROUND_2;
+            border-radius: $SIZE_BORDER_RADIUS;
+            border: $BORDER_2;
+            margin: 0 $SPACING_SM;
+            padding: $SPACING_SM;
+        }
+
+        #cpuLabel,
+        #memoryLabel,
+        #diskLabel {
+            color: $COLOR_TEXT_3;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        #cpuValue,
+        #memoryValue,
+        #diskValue {
+            color: $COLOR_TEXT_2;
+            font-size: 11px;
+            min-width: 30px;
+        }
+
+        // Progress Bars
+        #cpuProgress,
+        #memoryProgress,
+        #diskProgress {
+            background-color: $COLOR_BACKGROUND_4;
+            border: none;
+            border-radius: 2px;
+
+            &::chunk {
+                background-color: $COLOR_ACCENT_1;
+                border-radius: 4px;
+                border: none;
+            }
+        }
+
+        #cpuProgress::chunk {
+            background-color: qlineargradient(
+                x1: 0, y1: 0, 
+                x2: 1, y2: 0, 
+                stop: 0 rgba($CA1_R, $CA1_G, $CA1_B, 0.7),
+                stop: 0.3 rgba($CA1_R, $CA1_G, $CA1_B, 0.5),
+                stop: 0.5 rgba($CA2_R, $CA2_G, $CA2_B, 0.8),
+                stop: 0.7 rgba($CA2_R, $CA2_G, $CA2_B, 0.9),
+                stop: 1 rgba($CA3_R, $CA3_G, $CA3_B, 1.0)
+            );
+        }
+
+        #memoryProgress::chunk {
+            background-color: qlineargradient(
+                x1: 0, y1: 0, 
+                x2: 1, y2: 0, 
+                stop: 0 rgba(65, 205, 82, 0.7),
+                stop: 0.3 rgba(65, 205, 82, 0.5),
+                stop: 0.5 rgba(87, 215, 101, 0.8),
+                stop: 0.7 rgba(103, 215, 116, 0.9),
+                stop: 1 rgba(52, 164, 65, 1.0)
+            );
+        }
+
+        #diskProgress::chunk {
+            background-color: qlineargradient(
+                x1: 0, y1: 0, 
+                x2: 1, y2: 0, 
+                stop: 0 rgba(33, 150, 243, 0.7),
+                stop: 0.3 rgba(33, 150, 243, 0.5),
+                stop: 0.5 rgba(42, 163, 239, 0.8),
+                stop: 0.7 rgba(25, 118, 210, 0.9),
+                stop: 1 rgba(21, 101, 192, 1.0)
+            );
+        }
+
+        // Footer Section
+        #rightFooterWidget {
+            background-color: $COLOR_BACKGROUND_2;
+            border-radius: 0 0 0 $CARD_RADIUS;
+            padding: $SPACING_SM;
+            border-top: $BORDER_2;
+        }
+
+        #currentTimeLabel {
+            color: $COLOR_TEXT_1;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 2px 0;
+        }
+
+        #currentDateLabel {
+            color: $COLOR_TEXT_3;
+            font-size: 12px;
+            padding: 2px 0;
+            margin-bottom: $SPACING_SM;
+        }
+    }
+}
+//===================================================//
+// END //
+//====================================================//

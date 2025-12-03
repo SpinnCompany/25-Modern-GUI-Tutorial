@@ -1,0 +1,102 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.spec
+
+# Virtual env
+venv/
+env/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ------------------------------
+# Qt / PySide / GUI
+# ------------------------------
+# Qt Designer autosave
+*.ui.autosave
+
+# Qt build artifacts
+*.qrc.dep
+*.moc
+*.qmlc
+*.jsc
+*.qml.cache
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+
+# PySide compiled UI files (if generated)
+ui_*.py
+
+# Cache for custom Qt widgets/plugins
+*.qmlproject.user
+*.qmlproject.user.*
+*.creator.user
+*.creator.user.*
+
+# Qt Creator local files
+*.user
+*.user.*
+*.qtcsettings
+
+# ------------------------------
+# OS Files
+# ------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------
+# VSCode / JetBrains IDEs
+# ------------------------------
+.vscode/
+.idea/
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+logs/
+log/
+
+# ------------------------------
+# Custom widgets / project maker
+# ------------------------------
+# Your temporary compiled Sass/QSS outputs
+*.sass-cache/
+*.qss.cache
+*.css.map
+
+# Ignore temporary JSON configs
+*.temp.json
+config_backup.json
+
+# ------------------------------
+# Environment / secrets
+# ------------------------------
+*.env
+secrets.json
+config.json
+
+Qss/icons/
+
+# Files available on patreon (Spinn Tv)
+json-styles/style.json
+ui/QCustomQMainWindow.ui
+ui/Footer.ui
+ui/Header.ui
+ui/LeftSidebar.ui
+ui/MainBody.ui

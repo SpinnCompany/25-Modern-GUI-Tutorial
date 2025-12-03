@@ -1,0 +1,44 @@
+{
+  "QCustomSidebarButton": [
+    {
+      "name": "menuBtn",
+      "icon": "../Qss/icons/icons/material_design/menu_open.png"
+    },
+    {
+      "name": "btnHome",
+      "icon": "../Qss/icons/icons/material_design/window.png"
+    },
+    {
+      "name": "btnMessages",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/message.png"
+    },
+    {
+      "name": "btnIntegration",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/square-plus.png"
+    },
+    {
+      "name": "btnFinance",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/folder-open.png"
+    },
+    {
+      "name": "btnThreads",
+      "icon": "../Qss/icons/icons/feather/check-circle.png"
+    },
+    {
+      "name": "btnContacts",
+      "icon": "../Qss/icons/icons/material_design/contacts.png"
+    },
+    {
+      "name": "btnExplore",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/folder-tree.png"
+    },
+    {
+      "name": "btnSettings",
+      "icon": "../Qss/icons/icons/material_design/settings.png"
+    },
+    {
+      "name": "btnHelp",
+      "icon": "../Qss/icons/icons/material_design/help.png"
+    }
+  ]
+}

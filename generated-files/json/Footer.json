@@ -1,0 +1,8 @@
+{
+  "QPushButton": [
+    {
+      "name": "pushButton",
+      "icon": "../Qss/icons/icons/material_design/help.png"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>CustomMainWindow</class>
+ <widget class="QCustomQMainWindow" name="CustomMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>976</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Custom MainWindow</string>
+  </property>
+  <property name="liveCompileStylesheet" stdset="0">
+   <bool>true</bool>
+  </property>
+  <property name="paintQtDesignerUI" stdset="0">
+   <bool>true</bool>
+  </property>
+  <property name="customSideDrawers" stdset="0">
+   <string>src/ui_LeftSideDrawer.py,src/ui_TopSideDrawer.py,src/ui_BottomSideDrawer.py, src/ui_RightSideDrawer.py</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item alignment="Qt::AlignmentFlag::AlignLeft">
+     <widget class="QWidget" name="leftPanel" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCustomComponentContainer" name="leftSidebarComponentContainer">
+         <property name="filePath" stdset="0">
+          <string>src/ui_LeftSidebar.py</string>
+         </property>
+         <property name="previewComponent" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="mainBody" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignmentFlag::AlignTop">
+        <widget class="QCustomComponentContainer" name="headerComponentContainer">
+         <property name="filePath" stdset="0">
+          <string>src/ui_Header.py</string>
+         </property>
+         <property name="previewComponent" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCustomHorizontalSeparator" name="customHorizontalSeparator" />
+       </item>
+       <item>
+        <widget class="QCustomComponentContainer" name="mainBodyComponentContainer">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="filePath" stdset="0">
+          <string>src/ui_MainBody.py</string>
+         </property>
+         <property name="previewComponent" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCustomHorizontalSeparator" name="customHorizontalSeparator_2" />
+       </item>
+       <item alignment="Qt::AlignmentFlag::AlignBottom">
+        <widget class="QCustomComponentContainer" name="footerComponentContainer">
+         <property name="filePath" stdset="0">
+          <string>src/ui_Footer.py</string>
+         </property>
+         <property name="previewComponent" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignmentFlag::AlignRight">
+     <widget class="QWidget" name="rightPanel" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCustomComponentContainer" name="rightSidebarComponentContainer">
+         <property name="filePath" stdset="0">
+          <string>src/ui_RightSidebar.py</string>
+         </property>
+         <property name="previewComponent" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomQMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>Custom_Widgets.QCustomQMainWindow</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomHorizontalSeparator</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomHorizontalSeparator</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomComponentContainer</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomComponentContainer</header>
+  </customwidget>
+ <customwidget><class>QPushButton</class><extends>QPushButton</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget><customwidget><class>QLabel</class><extends>QLabel</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget></customwidgets>
+ <connections />
+</ui>

@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>CustomComponent</class>
+ <widget class="QCustomComponent" name="CustomComponent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CustomComponent</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QCustomSidebar" name="leftSidebar">
+     <property name="defaultWidth" stdset="0">
+      <string>220</string>
+     </property>
+     <property name="collapsedWidth" stdset="0">
+      <string>75</string>
+     </property>
+     <property name="expandedWidth" stdset="0">
+      <string>220</string>
+     </property>
+     <property name="toggleButtonName" stdset="0">
+      <string>menuBtn</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCustomSidebarButton" name="menuBtn">
+           <property name="text">
+            <string>     New Menu</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../Qss/icons/_icons.qrc">
+             <normaloff>:/material_design/icons/material_design/menu_open.png</normaloff>:/material_design/icons/material_design/menu_open.png</iconset>
+           </property>
+           <property name="labelText" stdset="0">
+            <string>New Menu</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>214</width>
+           <height>626</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnHome">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/material_design/icons/material_design/window.png</normaloff>:/material_design/icons/material_design/window.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Home</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnMessages">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/font_awesome/solid/icons/font_awesome/solid/message.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/message.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Messages</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnIntegration">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/font_awesome/solid/icons/font_awesome/solid/square-plus.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/square-plus.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Intergration</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnFinance">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/font_awesome/solid/icons/font_awesome/solid/folder-open.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/folder-open.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Finance</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnThreads">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/feather/icons/feather/check-circle.png</normaloff>:/feather/icons/feather/check-circle.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Threads</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnContacts">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/material_design/icons/material_design/contacts.png</normaloff>:/material_design/icons/material_design/contacts.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Contacts</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnExplore">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/font_awesome/solid/icons/font_awesome/solid/folder-tree.png</normaloff>:/font_awesome/solid/icons/font_awesome/solid/folder-tree.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Explore</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnSettings">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/material_design/icons/material_design/settings.png</normaloff>:/material_design/icons/material_design/settings.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Settings</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCustomSidebarButton" name="btnHelp">
+               <property name="icon">
+                <iconset resource="../Qss/icons/_icons.qrc">
+                 <normaloff>:/material_design/icons/material_design/help.png</normaloff>:/material_design/icons/material_design/help.png</iconset>
+               </property>
+               <property name="labelText" stdset="0">
+                <string>Help</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSidebar</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomSidebar</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomSidebarButton</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Widgets.QCustomSidebarButton</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomComponent</class>
+   <extends>QWidget</extends>
+   <header>Custom_Widgets.QCustomComponent</header>
+   <container>1</container>
+  </customwidget>
+ <customwidget><class>QPushButton</class><extends>QPushButton</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget><customwidget><class>QLabel</class><extends>QLabel</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget></customwidgets>
+ <connections />
+</ui>

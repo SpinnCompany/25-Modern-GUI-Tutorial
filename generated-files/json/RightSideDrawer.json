@@ -1,0 +1,52 @@
+{
+  "QLabel": [
+    {
+      "name": "fileIconLabel",
+      "pixmap": "../Qss/icons/icons/material_design/description.png"
+    }
+  ],
+  "QPushButton": [
+    {
+      "name": "shareBtn",
+      "icon": "../Qss/icons/icons/material_design/share.png"
+    },
+    {
+      "name": "tagBtn",
+      "icon": "../Qss/icons/icons/material_design/tag.png"
+    },
+    {
+      "name": "infoBtn",
+      "icon": "../Qss/icons/icons/material_design/info.png"
+    },
+    {
+      "name": "downloadBtn",
+      "icon": "../Qss/icons/icons/material_design/file_download.png"
+    },
+    {
+      "name": "printBtn",
+      "icon": "../Qss/icons/icons/material_design/print.png"
+    },
+    {
+      "name": "duplicateBtn",
+      "icon": "../Qss/icons/icons/material_design/content_copy.png"
+    },
+    {
+      "name": "deleteBtn",
+      "icon": "../Qss/icons/icons/material_design/delete.png"
+    }
+  ],
+  "QListWidget": [
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/visibility.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/edit.png"
+    },
+    {
+      "name": null,
+      "icon": "../Qss/icons/icons/material_design/group.png"
+    }
+  ]
+}

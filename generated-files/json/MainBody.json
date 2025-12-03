@@ -1,0 +1,26 @@
+{
+  "QPushButton": [
+    {
+      "name": "leftSideDrawerBtn",
+      "icon": "../Qss/icons/icons/feather/align-justify.png"
+    },
+    {
+      "name": "topSideDrawerBtn",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/chevron-up.png"
+    },
+    {
+      "name": "bottomSideDrawerBtn",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/chevron-down.png"
+    },
+    {
+      "name": "rightSideDrawerBtn",
+      "icon": "../Qss/icons/solid/icons/font_awesome/solid/chevron-right.png"
+    }
+  ],
+  "QCustomSidebarLabel": [
+    {
+      "name": "customSidebarLabel",
+      "icon": "../Qss/icons/icons/feather/terminal.png"
+    }
+  ]
+}
