@@ -1,6 +1,20 @@
+![Thumbnail](images/thumb.png)
+
+[![GitHub](https://img.shields.io/github/license/SpinnCompany/QT-PyQt-PySide-Custom-Widgets?logo=Github)](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets/blob/master/LICENSE)
+[![GitHub top language](https://img.shields.io/github/languages/top/SpinnCompany/QT-PyQt-PySide-Custom-Widgets?logo=github)](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets)
+[![GitHub issues](https://img.shields.io/github/issues/SpinnCompany/QT-PyQt-PySide-Custom-Widgets?logo=github)](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets/issues)
+
 # 25 Modern GUI Tutorial
 
 This repository accompanies the **25 Modern GUI Tutorial**, providing a complete project structure for PySide6 / PyQt / Qt-based applications.
+
+**Watch the full video tutorial:** [https://youtu.be/K4hin5wMlec](https://youtu.be/K4hin5wMlec)
+
+**Documentation:**
+
+* [Official Docs](https://qtcustomwidgets.spinncode.com/)
+* [GitHub Pages Docs](https://spinncompany.github.io/Docs-QT-PyQt-PySide-Custom-Widgets/)
+
 It includes custom widgets, automatic UI-to-Python conversion, style management, and a clean, scalable architecture suitable for modern desktop applications.
 
 ---
@@ -9,32 +23,32 @@ It includes custom widgets, automatic UI-to-Python conversion, style management,
 
 ```
 .
-├── README.md                # Description of the project
-├── requirements.txt         # Python dependencies
-├── main.py                  # Entry point of the application
+├── README.md                
+├── requirements.txt         
+├── main.py                  
 │
-├── ui/                      # UI design files
-│   ├── main_window.ui       # Main window layout
+├── ui/                      
+│   ├── main_window.ui       
 │   └── ...other UI files
 │
-├── src/                     # Application source code
+├── src/                     
 │   ├── __init__.py
-│   ├── utils.py             # Utility functions
-│   ├── helper_functions.py  # Additional helpers
-│   ├── ui_main_window.py    # Auto-generated Python from main_window.ui
+│   ├── utils.py             
+│   ├── helper_functions.py  
+│   ├── ui_main_window.py    
 │   └── ...more modules
 │
-├── qss/                     # Style sheets and assets
-│   ├── scss/                # SCSS source files
-│   └── icons/               # Application icons
+├── qss/                     
+│   ├── scss/                
+│   └── icons/               
 │
 ├── logs/
-│   └── custom_widgets.log   # Log file
+│   └── custom_widgets.log   
 │
-├── json_styles/             # JSON style definitions
+├── json_styles/             
 │   └── style.json
 │
-└── generated-files/         # Auto-generated output
+└── generated-files/         
     ├── Converted UI Python files
     └── Generated JSON configurations
 ```
@@ -58,10 +72,10 @@ The goal is to simplify GUI development for both beginners and advanced develope
 
 Full project source code, extended materials, and additional lessons are available to supporters.
 
-To access the complete source code and support the development of future tutorials:
+To access the complete source code and support future tutorials:
 
-Patreon:
-[https://www.patreon.com/c/spinntv](https://www.patreon.com/c/spinntv)
+* **Patreon:** [https://www.patreon.com/c/spinntv](https://www.patreon.com/c/spinntv)
+* Tutorial link for reference: [https://youtu.be/K4hin5wMlec](https://youtu.be/K4hin5wMlec)
 
 Your support directly helps maintain and expand this project and future GUI tutorials.
 
