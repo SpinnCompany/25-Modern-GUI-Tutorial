@@ -85,5 +85,5 @@ Your support directly helps maintain and expand this project and future GUI tuto
 
 For updates and the main custom widgets module:
 
-[https://github.com/SpinnCompanyu/QT-PyQt-PySide-Custom-Widgets](https://github.com/SpinnCompanyu/QT-PyQt-PySide-Custom-Widgets)
+[https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets](https://github.com/SpinnCompany/QT-PyQt-PySide-Custom-Widgets)
 
